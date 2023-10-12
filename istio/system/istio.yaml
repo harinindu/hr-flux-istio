@@ -44,7 +44,6 @@ spec:
     - name: istio-base
   chart:
     spec:
-      version: "${version}"
       chart: istiod
       sourceRef:
         kind: HelmRepository
@@ -79,7 +78,6 @@ spec:
     - name: istiod
   chart:
     spec:
-      version: "${version}"
       chart: gateway
       sourceRef:
         kind: HelmRepository
